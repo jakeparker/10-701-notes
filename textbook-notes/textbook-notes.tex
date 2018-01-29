@@ -1,0 +1,94 @@
+\documentclass[12pt, a4paper, oneside, fleqn]{notes}
+\usepackage[style=boxed]{preamble}
+\usepackage{letters}
+
+\usepackage{etex}
+
+\usepackage[linktoc=all]{hyperref}
+\hypersetup{pdftex,colorlinks=false}
+\usepackage{hypcap}
+
+\usepackage{enumerate, enumitem, extramarks, linegoal, graphicx, fancyhdr}
+\usepackage{amsmath}
+
+\newcommand{\Title}{Textbook Notes}
+\newcommand{\Date}{2018}
+\newcommand{\Class}{10--701}
+\newcommand{\ClassName}{Introduction to Machine Learning}
+\newcommand{\Name}{Jake Parker, ...}
+
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\Class}}
+\chead{\fancyplain{}{\ClassName}}
+\rhead{\fancyplain{}{\Title}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% CB:  Pattern Recognition and Machine Learning (Bishop)
+% KM:  Machine Learning: a probabilistic perspective (Murphy)
+% HTF: The Elements of Statistical Learning: Data Mining, Inference and Prediction (Hastie, Tibshirani, Friedman)
+
+\tableofcontents
+
+% [1] Foundations
+\chapter{Foundations}
+\include{textbook_notes_00} % {KM 1:}
+\include{textbook_notes_01} % {KM 2:}
+\include{textbook_notes_02} % {KM 6:}
+\include{textbook_notes_03} % {KM 5:}
+\include{textbook_notes_04} % {HTF 2:}
+\include{textbook_notes_11} % {HTF 7:}
+
+
+% [2] Regression
+\chapter{Regression}
+\include{textbook_notes_05} % {CB 3:}
+\include{textbook_notes_06} % {CB 4:}
+
+
+% [3] Classification
+\chapter{Classification}
+\include{textbook_notes_07} % {CB 4:}
+\include{textbook_notes_08} % {KM 14:}
+\include{textbook_notes_09} % {HTF 10:}
+\include{textbook_notes_10} % {HTF 9:}
+\include{textbook_notes_12} % {CB 5:}
+\include{textbook_notes_13} % {KM 28:}
+
+
+% [4] Nonparametric Methods
+\chapter{Nonparametric Methods}
+\include{textbook_notes_14} % {HTF 6:}
+\include{textbook_notes_15} % {HTF 13:}
+\include{textbook_notes_16} % {CB 6:}
+\include{textbook_notes_17} % {CB 7:}
+
+
+% [5] Unsupervised Learning
+\chapter{Unsupervised Learning}
+\include{textbook_notes_18} % {HTF 14.1 - 14.3}
+\include{textbook_notes_19} % {CB 9:}
+\include{textbook_notes_20} % {KM 10:}
+\include{textbook_notes_21} % {KM 19:}
+\include{textbook_notes_22} % {KM 20:}
+
+
+% [6] Sequence Mdoels
+\chapter{Sequence Models}
+\include{textbook_notes_23} % {KM 17:}
+\include{textbook_notes_24} % {KM 18:}
+
+
+% [7] Representational Learning
+\chapter{Representational Learning}
+\include{textbook_notes_25} % {HTF 14.5}
+\include{textbook_notes_26} % {HTF 14.7}
+
+
+% [8] Reinforcement Learning
+\chapter{Reinforcement Learning}
+
+
+\end{document}

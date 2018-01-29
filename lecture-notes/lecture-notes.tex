@@ -1,0 +1,85 @@
+\documentclass[12pt, a4paper, oneside, fleqn]{notes}
+\usepackage[style=boxed]{preamble}
+\usepackage{letters}
+
+\usepackage{etex}
+
+\usepackage[linktoc=all]{hyperref}
+\hypersetup{pdftex,colorlinks=false}
+\usepackage{hypcap}
+
+\usepackage{enumerate, enumitem, extramarks, linegoal, graphicx, fancyhdr}
+\usepackage{amsmath}
+
+\newcommand{\Title}{Lecture Notes}
+\newcommand{\Date}{2018}
+\newcommand{\Class}{10--701}
+\newcommand{\ClassName}{Introduction to Machine Learning}
+\newcommand{\Name}{Jake Parker, ...}
+
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\Class}}
+\chead{\fancyplain{}{\ClassName}}
+\rhead{\fancyplain{}{\Title}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\tableofcontents
+
+% [1] Foundations
+\chapter{Foundations}
+\include{lecture_notes_00} % {data, algorithms, tasks}
+\include{lecture_notes_01} % {estimators, guarantees (learning theory), mle}
+\include{lecture_notes_02} % {bayesian estimation, map}
+\include{lecture_notes_03} % {model-free methods, decision theory, bayes risk}
+\include{lecture_notes_10} % {generalization, model selection}
+\include{lecture_notes_26} % {statistical guarantees for empirical risk minimization}
+
+% [2] Regression
+\chapter{Regression}
+\include{lecture_notes_04} % {linear regression}
+\include{lecture_notes_05} % {regularized, polynomial, logistic regression}
+
+% [3] Classification
+\chapter{Classification}
+\include{lecture_notes_06} % {naive bayes, generative vs discriminative}
+\include{lecture_notes_07} % {support vector machines}
+\include{lecture_notes_08} % {boosting, surrogate losses}
+\include{lecture_notes_09} % {decision trees}
+\include{lecture_notes_11} % {neural networks and deep learning}
+
+% [4] Nonparametric Methods
+\chapter{Nonparametric Methods}
+\include{lecture_notes_12} % {k nearest neighbors, kernel density estimation}
+\include{lecture_notes_13} % {svm, lin reg (primal + dual), kernels, kernel trick}
+\include{lecture_notes_14} % {kernel trick}
+
+% [5] Unsupervised Learning
+\chapter{Unsupervised Learning}
+\include{lecture_notes_15} % {hierarchical, k means}
+\include{lecture_notes_16} % {mixture of gaussians, expectation maximization}
+\include{lecture_notes_17} % {latent variable models}
+\include{lecture_notes_18} % {graphical models}
+\include{lecture_notes_19} % {graphical models}
+
+% [6] Sequence Mdoels
+\chapter{Sequence Models}
+\include{lecture_notes_20} % {hidden markov models}
+\include{lecture_notes_21} % {state space models, time series}
+
+% [7] Representational Learning
+\chapter{Representational Learning}
+\include{lecture_notes_22} % {feature transformation, random features, pca}
+\include{lecture_notes_23} % {pca, ica}
+
+% [8] Reinforcement Learning
+%     - markov decision processes
+%     - value iteration
+%     - Q learning
+\chapter{Reinforcement Learning}
+\include{lecture_notes_24} % {mdp, value iteration, q learning}
+\include{lecture_notes_25} % {q learning for stochastic environment, deep rl}
+
+\end{document}
